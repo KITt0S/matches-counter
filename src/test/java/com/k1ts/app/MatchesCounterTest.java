@@ -11,7 +11,7 @@ class MatchesCounterTest {
         testEnv.testThatThreeSquaresRequire10Matches();
         testEnv.testThatFourSquaresRequire12Matches();
         testEnv.testThatFiveSquaresRequire15Matches();
-        testEnv.testThatSixSquaresRequire18Matches();
+        testEnv.testThatSixSquaresRequire17Matches();
     }
 
     private void testThatSingleSquareRequires4Matches() {
@@ -44,7 +44,7 @@ class MatchesCounterTest {
         assert expected == actual : "Test failed, expected: " + expected + ", but actual: " + actual;
     }
 
-    private void testThatSixSquaresRequire18Matches() {
+    private void testThatSixSquaresRequire17Matches() {
         int expected = 17;
         int actual = new MatchesCounter(6).countMatches();
         assert expected == actual : "Test failed, expected: " + expected + ", but actual: " + actual;
